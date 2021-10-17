@@ -1,9 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SpedOfStuff/TestStuff/main/R6.lua"))()
-local n = nil
-repeat
-	wait(0.05)
-	n = game.Players:WaitForChild("non",0.05)
-until n ~= nil
+wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SpedOfStuff/TestStuff/main/Library.lua"))()
 function sandbox(var,func)
 	local env = getfenv(func)
