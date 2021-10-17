@@ -1,5 +1,5 @@
 
-loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/Library.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpedOfStuff/TestStuff/main/Library.lua"))()
 
 function sandbox(var,func)
 	local env = getfenv(func)
