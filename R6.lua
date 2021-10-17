@@ -1,3 +1,5 @@
+print("CR6")
+
 if not _G.Velocity then _G.Velocity = Vector3.new(30,0,0) end
 
 -- adding net so we dont lose the body
