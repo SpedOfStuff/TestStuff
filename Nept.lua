@@ -1,3 +1,4 @@
+print("Nept")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SpedOfStuff/TestStuff/main/R6.lua"))()
 
 function sandbox(var,func)
