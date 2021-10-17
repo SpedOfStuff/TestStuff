@@ -1,6 +1,6 @@
 print("Fired 'A'")
-loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/RE6.lua"))()
-loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/LLIB.lua"))()
+loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/R6.lua"))()
+loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/Library.lua"))()
 
 function sandbox(var,func)
 	local env = getfenv(func)
