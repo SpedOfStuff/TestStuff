@@ -1,4 +1,5 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SpedOfStuff/TestStuff/main/Library.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpedOfStuff/TestStuff/main/Library.lua"))() wait()
+warn("Cat")
 function sandbox(var,func)
 	local env = getfenv(func)
 	local newenv = setmetatable({},{
