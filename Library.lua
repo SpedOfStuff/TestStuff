@@ -1,4 +1,3 @@
-print("CLIB")
 function LoadLibrary(a)
 local t = {}
  
