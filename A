@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/RE6.lua"))()
 loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/LLIB.lua"))()
 
 function sandbox(var,func)
