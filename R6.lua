@@ -10,7 +10,6 @@ game:GetService("RunService").RenderStepped:Connect(function()
     sethiddenproperty(plr,"MaxSimulationRadius",1000)
 end)
 
--- Creating Early Variables.
 local Player = game.Players.LocalPlayer
 local Character = Player.Character
 local PlayerName = Player.Name
@@ -27,15 +26,15 @@ local Reanimated = true
 
 if Humanoid.RigType == Enum.HumanoidRigType.R15 then
     game.StarterGui:SetCore("ChatMakeSystemMessage", {
-        Text = "Yes You are on R15! Please use the R15 Reanimation instead.",
+        Text = "You are on R15! Please use the R15 Reanimation instead.",
         Color = Color3.fromRGB(255, 10, 70),
         TextSize = 18,
         Font = Enum.Font.Ubuntu
     });
 return end
-if game.Players.LocalPlayer.Character:FindFirstChild("Yes") or workspace:FindFirstChild("Yes") then
+if game.Players.LocalPlayer.Character:FindFirstChild("non") or workspace:FindFirstChild("non") then
     game.StarterGui:SetCore("ChatMakeSystemMessage", {
-        Text = "Yes You are already reanimated! Please reset to unreanimate.",
+        Text = "reset",
         Color = Color3.fromRGB(255, 10, 70),
         TextSize = 18,
         Font = Enum.Font.Ubuntu
@@ -56,8 +55,8 @@ end)
 -- Start reanimation
 game:WaitForChild("Run Service").Heartbeat:Connect(function()
     if Reanimated == true then
-        if Character.Yes then
-            Character.Torso.CFrame=Character.Yes.Torso.CFrame
+        if Character.non then
+            Character.Torso.CFrame=Character.non.Torso.CFrame
         end
 		RightArm.Velocity = _G.Velocity
         RightLeg.Velocity =_G.Velocity
@@ -80,9 +79,9 @@ end)
 
 local CopyCharacter = Character:Clone()
 CopyCharacter.Parent = Character 
-CopyCharacter.Name = "Yes" -- you can always change name.
+CopyCharacter.Name = "non"
 
-for k,l in pairs(Character.Yes:GetDescendants()) do 
+for k,l in pairs(Character.non:GetDescendants()) do 
     if l:IsA("Part") or l:IsA("Decal") then
     l.Transparency=1
 end
@@ -174,7 +173,7 @@ Character.Animate.Disabled = true
 game:GetService("UserInputService").JumpRequest:connect(function(t)
     if CopyCharacter.Humanoid.FloorMaterial~=Enum.Material.Air then 
         CopyCharacter.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-        game.Players.LocalPlayer.Character.Yes:FindFirstChildOfClass('Humanoid').Sit=false 
+        game.Players.LocalPlayer.Character.non:FindFirstChildOfClass('Humanoid').Sit=false 
     end 
 end)
 
