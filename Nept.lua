@@ -1,4 +1,4 @@
-print("Fired 'A'")
+print(math.random(1,12))
 loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/R6.lua"))()
 loadstring(game:HttpGet("https://github.com/SpedOfStuff/TestStuff/blob/main/Library.lua"))()
 
