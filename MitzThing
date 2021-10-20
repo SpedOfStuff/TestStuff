@@ -6,14 +6,14 @@ CountSCIFIMOVIELOL = 1
 function SCIFIMOVIELOL(Part0,Part1,Position,Angle)
 	local AlignPos = Instance.new('AlignPosition', Part1); AlignPos.Name = "AliP_"..CountSCIFIMOVIELOL
 	AlignPos.ApplyAtCenterOfMass = true;
-	AlignPos.MaxForce = 9999999;
-	AlignPos.MaxVelocity = math.huge/4;
+	AlignPos.MaxForce = 67752;
+	AlignPos.MaxVelocity = math.huge/9e110;
 	AlignPos.ReactionForceEnabled = false;
 	AlignPos.Responsiveness = 200;
 	AlignPos.RigidityEnabled = false;
 	local AlignOri = Instance.new('AlignOrientation', Part1); AlignOri.Name = "AliO_"..CountSCIFIMOVIELOL
-	AlignOri.MaxAngularVelocity = math.huge/6;
-	AlignOri.MaxTorque = 9999999;
+	AlignOri.MaxAngularVelocity = math.huge/9e110;
+	AlignOri.MaxTorque = 67752;
 	AlignOri.PrimaryAxisOnly = false;
 	AlignOri.ReactionTorqueEnabled = false;
 	AlignOri.Responsiveness = 200;
